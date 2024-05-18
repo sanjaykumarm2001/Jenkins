@@ -1,11 +1,12 @@
-pipeline{
-  agent any 
-  stages{
-    steps('build'){
-        script{
-            docker.build('hello')
+pipeline {
+    agent any
+    stages {
+        stage('Build') {  
+            steps {
+                script {
+                    docker.build('hello')  
+                }
+            }
         }
+    }
 }
-}
-}
-
