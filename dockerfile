@@ -1,4 +1,4 @@
 FROM python
-WRKDIR /var/app
+WORKDIR /var/app
 COPY main.py .
 CMD ["python", ""./main.py"]
