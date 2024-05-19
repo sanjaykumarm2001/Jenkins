@@ -4,7 +4,7 @@ pipeline {
         stage('Build') {  
             steps {
                 script {
-                    docker.build('hello')  
+                  sh "docker build -t world . "
                 }
             }
         }
